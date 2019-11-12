@@ -1,0 +1,9 @@
+server:
+  port: 8190
+spring:
+  application:
+    name: eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8190/eureka,http://localhost:8090/eureka

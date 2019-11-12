@@ -1,0 +1,13 @@
+server:
+  port: 1996
+spring:
+  application:
+    name: Zuu
+zuul:
+  routes:
+    userprovider03:
+      path: /userprovider03/**
+      url: http://localhost:8091/
+    userConsumer:
+      path: /userConsumer/**
+      service-id: USERWEB

@@ -1,0 +1,12 @@
+server:
+  port: 9002
+spring:
+  thymeleaf:
+    cache: false
+  application:
+    name: UserWeb
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8090/eureka,http://localhost:8190/eureka
+
